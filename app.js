@@ -37,11 +37,11 @@ app.get('/getMachineDetails/:id', gumMachine.getMachineDetails);
 app.post('/getMachineDetails/:id', gumMachine.updateMachineDetails);
 app.get('deleteMachine/:id', gumMachine.deleteMachine);
 
-/*http.createServer(app).listen(app.get('port'), function(){
+http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
-});*/
+});
 
-app.use(app.router);
+/*app.use(app.router);
 var nodePort = process.env.OPENSHIFT_NODEJS_PORT || 3000;
 var nodeAddress =  process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
-app.listen(nodePort, nodeAddress);
+app.listen(nodePort, nodeAddress);*/
